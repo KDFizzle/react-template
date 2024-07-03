@@ -1,14 +1,14 @@
+import {Separator} from "./components/ui/separator.jsx"
+import ExpensesTable from "./ExpensesTable.jsx"
+
 function App() {
-  return (
-    <div id="template-text">
-      <h1>React Starter Template</h1>
-      <p>
-        For TypeScript please use{" "}
-        <a href="https://github.com/ruairidhflint/react-template-ts">this</a>{" "}
-        template
-      </p>
-    </div>
-  );
+    return (
+        <div className={'m-10'}>
+            <h1 className={'text-4xl mb-3 ml-3'}>Expenses</h1>
+            <Separator className={'bg-black mb-5'}/>
+            <ExpensesTable/>
+        </div>
+    )
 }
 
-export default App;
+export default App
